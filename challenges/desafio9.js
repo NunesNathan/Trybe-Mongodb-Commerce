@@ -1,4 +1,5 @@
-db.produtos.find({
+db.produtos.find(
+  {
   valoresNutricionais: {
     $all: [{
       $elemMatch: {
@@ -10,4 +11,5 @@ db.produtos.find({
   {
     _id: 0,
     nome: 1,
-  });
+  },
+);

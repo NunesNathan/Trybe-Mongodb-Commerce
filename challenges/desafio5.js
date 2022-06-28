@@ -1,4 +1,5 @@
-db.produtos.find({
+db.produtos.find(
+  {
   $or: [
     { curtidas: 36 },
     { vendidos: 85 },
@@ -9,4 +10,5 @@ db.produtos.find({
     nome: 1,
     curtidas: 1,
     vendidos: 1,
-  });
+  },
+);

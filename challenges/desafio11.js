@@ -1,4 +1,5 @@
-db.produtos.find({
+db.produtos.find(
+  {
   nome: {
     $not: {
       $in: ["Big Mac", "McChicken"],
@@ -10,4 +11,5 @@ db.produtos.find({
     nome: 1,
     curtidas: 1,
     vendidos: 1,
-  });
+  },
+);

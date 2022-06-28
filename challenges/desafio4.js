@@ -1,4 +1,5 @@
-db.produtos.find({
+db.produtos.find(
+  {
   vendidos: {
     $gt: 50,
     $lt: 100,
@@ -8,7 +9,9 @@ db.produtos.find({
     _id: 0,
     nome: 1,
     vendidos: 1,
-  })
-  .sort({
+  },
+).sort(
+  {
     vendidos: 1,
-  });
+  },
+);
